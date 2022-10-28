@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/skills")
-@CrossOrigin(origins = "https://front-endportfolio.web.app/")
+@CrossOrigin(origins = "https://front-endportfolio.web.app")
 public class HySController {
 
     @Autowired

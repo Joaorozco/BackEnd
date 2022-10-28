@@ -15,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "https://front-endportfolio.web.app/")
+@CrossOrigin(origins = "https://front-endportfolio.web.app")
 @Log4j2
 @SuppressWarnings("unchecked")
 public class PersonaController {
