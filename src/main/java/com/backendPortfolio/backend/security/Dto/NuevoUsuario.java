@@ -5,21 +5,12 @@ import java.util.Set;
 
 
 public class NuevoUsuario {
-    private String nombre;
     private String nombreUsuario;
     private String email;
     private String password;
     private Set<String> roles = new HashSet<>();
     
     //Getters and Setter
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public String getNombreUsuario() {
         return nombreUsuario;
