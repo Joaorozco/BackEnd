@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.backendPortfolio.backend.security.Entity;
+package com.backendPortfolio.backend.security.entity;
 
 import com.sun.istack.NotNull;
 import java.util.HashSet;

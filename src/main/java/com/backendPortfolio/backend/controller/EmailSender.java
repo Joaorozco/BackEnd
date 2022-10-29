@@ -15,7 +15,7 @@ public class EmailSender {
     MailService mailService;
 
     @PostMapping("/sendemail")
-    public ResponseEntity<Mail> sendMail(@RequestBody Mail mail)throws Exception{
+    public ResponseEntity<Mail> sendMail(@RequestBody Mail mail) {
         mailService.sendEmail(mail);
         return new ResponseEntity<>(HttpStatus.OK);
     }

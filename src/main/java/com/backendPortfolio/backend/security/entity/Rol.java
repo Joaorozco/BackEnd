@@ -1,6 +1,6 @@
-package com.backendPortfolio.backend.security.Entity;
+package com.backendPortfolio.backend.security.entity;
 
-import com.backendPortfolio.backend.security.Enums.RolNombre;
+import com.backendPortfolio.backend.security.enums.RolNombre;
 import com.sun.istack.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;

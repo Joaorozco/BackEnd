@@ -1,7 +1,7 @@
 package com.backendPortfolio.backend.controller;
 
 import com.backendPortfolio.backend.dto.dtoEducacion;
-import com.backendPortfolio.backend.security.Controller.Mensaje;
+import com.backendPortfolio.backend.security.controller.Mensaje;
 import com.backendPortfolio.backend.entity.Educacion;
 import com.backendPortfolio.backend.service.Seducacion;
 import java.util.List;

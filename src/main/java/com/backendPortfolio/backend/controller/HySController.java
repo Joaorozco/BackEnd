@@ -2,7 +2,7 @@ package com.backendPortfolio.backend.controller;
 
 import com.backendPortfolio.backend.dto.dtoHyS;
 import com.backendPortfolio.backend.entity.HyS;
-import com.backendPortfolio.backend.security.Controller.Mensaje;
+import com.backendPortfolio.backend.security.controller.Mensaje;
 import com.backendPortfolio.backend.service.HySService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

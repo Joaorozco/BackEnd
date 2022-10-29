@@ -4,8 +4,8 @@
  */
 package com.backendPortfolio.backend.security.service;
 
-import com.backendPortfolio.backend.security.Entity.Usuario;
-import com.backendPortfolio.backend.security.Entity.UsuarioPrincipal;
+import com.backendPortfolio.backend.security.entity.Usuario;
+import com.backendPortfolio.backend.security.entity.UsuarioPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

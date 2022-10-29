@@ -1,4 +1,4 @@
-package com.backendPortfolio.backend.security.Dto;
+package com.backendPortfolio.backend.security.dto;
 
 import javax.validation.constraints.NotBlank;
 

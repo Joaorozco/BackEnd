@@ -1,8 +1,8 @@
 package com.backendPortfolio.backend.security.service;
 
-import com.backendPortfolio.backend.security.Entity.Rol;
-import com.backendPortfolio.backend.security.Enums.RolNombre;
-import com.backendPortfolio.backend.security.Repository.iRolRepository;
+import com.backendPortfolio.backend.security.entity.Rol;
+import com.backendPortfolio.backend.security.enums.RolNombre;
+import com.backendPortfolio.backend.security.repository.iRolRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

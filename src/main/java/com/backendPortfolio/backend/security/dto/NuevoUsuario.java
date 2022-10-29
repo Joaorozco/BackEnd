@@ -1,4 +1,4 @@
-package com.backendPortfolio.backend.security.Dto;
+package com.backendPortfolio.backend.security.dto;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,7 +1,7 @@
 package com.backendPortfolio.backend.security.service;
 
-import com.backendPortfolio.backend.security.Entity.Usuario;
-import com.backendPortfolio.backend.security.Repository.iUsuarioRepository;
+import com.backendPortfolio.backend.security.entity.Usuario;
+import com.backendPortfolio.backend.security.repository.iUsuarioRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

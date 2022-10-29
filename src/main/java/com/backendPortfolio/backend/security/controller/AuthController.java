@@ -1,11 +1,11 @@
-package com.backendPortfolio.backend.security.Controller;
+package com.backendPortfolio.backend.security.controller;
 
-import com.backendPortfolio.backend.security.Dto.JwtDto;
-import com.backendPortfolio.backend.security.Dto.LoginUsuario;
-import com.backendPortfolio.backend.security.Dto.NuevoUsuario;
-import com.backendPortfolio.backend.security.Entity.Rol;
-import com.backendPortfolio.backend.security.Entity.Usuario;
-import com.backendPortfolio.backend.security.Enums.RolNombre;
+import com.backendPortfolio.backend.security.dto.JwtDto;
+import com.backendPortfolio.backend.security.dto.LoginUsuario;
+import com.backendPortfolio.backend.security.dto.NuevoUsuario;
+import com.backendPortfolio.backend.security.entity.Rol;
+import com.backendPortfolio.backend.security.entity.Usuario;
+import com.backendPortfolio.backend.security.enums.RolNombre;
 import com.backendPortfolio.backend.security.jwt.JwtProvider;
 import com.backendPortfolio.backend.security.service.RolService;
 import com.backendPortfolio.backend.security.service.UsuarioService;

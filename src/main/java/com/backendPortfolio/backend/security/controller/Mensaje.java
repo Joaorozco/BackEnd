@@ -1,4 +1,4 @@
-package com.backendPortfolio.backend.security.Controller;
+package com.backendPortfolio.backend.security.controller;
 
 public class Mensaje {
   private String mensaje;
