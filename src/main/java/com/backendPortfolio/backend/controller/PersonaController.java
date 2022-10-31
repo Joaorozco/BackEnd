@@ -15,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "https://front-endportfolio.web.app")
+@CrossOrigin(origins = "https://portfolio-12221.web.app")
 @Log4j2
 @SuppressWarnings("unchecked")
 public class PersonaController {
@@ -33,6 +33,12 @@ public class PersonaController {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         Persona persona = iPersonaService.getOne(id).get();
         return new ResponseEntity<>(persona, HttpStatus.OK);
+    }
+
+    @PostMapping("/personas/crear")
+    public String createPersona(@RequestBody Persona persona){
+        iPersonaService.save(persona);
+        return "La persona fue creada correctamente";
     }
 
     @PutMapping("/update/{id}")

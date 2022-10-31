@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/api")
 @RestController
-@CrossOrigin(origins = "https://front-endportfolio.web.app")
+@CrossOrigin(origins = "https://portfolio-12221.web.app")
 public class EmailSender {
     @Autowired
     MailService mailService;

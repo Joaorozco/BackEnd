@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "https://front-endportfolio.web.app")
+@CrossOrigin(origins = "https://portfolio-12221.web.app")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -59,10 +59,14 @@ public class AuthController {
             nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
         
         Set<Rol> roles = new HashSet<>();
-        roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
+        if(rolService.getByRolNombre(RolNombre.ROLE_USER).isPresent())
+            roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
         
-        if(nuevoUsuario.getRoles().contains("admin"))
-            roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).orElse(null));
+        if(nuevoUsuario.getRoles().contains("admin")) {
+            if(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).isPresent()) {
+                roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).get());
+            }
+        }
         usuario.setRoles(roles);
         usuarioService.save(usuario);
         
